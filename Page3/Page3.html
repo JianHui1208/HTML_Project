@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu</title>
+	<link rel="stylesheet" type="text/css" href="page3.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+	<style>
+		body{
+			background-color: rgb(255, 245, 204);
+			text-align: center;
+			font-family: 'Lato', sans-serif;
+			font-size: 110%
+		}
+		h1{
+			color: #00cccc;
+		}
+		h2{
+			color: red;			
+		}
+
+@media only screen and (max-width: 1024px)
+		{	
+			header img { width: auto; height: auto;}
+			div.topnav a { padding: 12px 7px }
+			div nav img{display: none;}
+		}
+
+		@media only screen and (max-width: 768px)
+		{	
+			div.topnav a {padding: 5px 7px}
+			div.topnav { display: block; }
+			aside div img { display: none; }
+			nav ul { display: inline; }
+		}
+	</style>
+</head>
+<body>
+<header>
+	<img src="logo2.png" width="1000" height="140" class="center" alt="McDonald's">
+</header><br>
+
+<div class="topnav">
+	<a href="../Home/home.html" class="active">Home</a>
+	<a href="../Page2/Page2.html">About Us</a>
+	<a href="../Page3/Page3.html">Menu</a>
+	<a href="../Page4/page4.html">Advertisement</a>
+	<a href="../Page5/Page5.html">Video</a>
+	<a href="../Page6/page6.html">Order Here</a>
+	<a href="../Page7/Page7.html">Link</a>
+	<a href="../Page8/Page8.html">Author</a>
+	<a href="../Page9/Page9.html">Documentation</a>
+</div>
+
+	<div class="music">
+	 <embed name="GoodEnough" src="love story.mp3" loop="true" hidden="true" autoplay="autoplay"> 
+
+<p>Today Date is :</p>
+	   <marquee  onMouseout="this.scrollAmount=10" scrolldelay="10" scrollamount="2" direction="left" width="90%" height="20%">
+	<div>
+	   <script>
+var mydate=new Date()
+var year=mydate.getYear()
+if (year < 1000)
+year+=1900
+var day=mydate.getDay()
+var month=mydate.getMonth()
+var daym=mydate.getDate()	
+if (daym<10)
+daym="0"+daym
+var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+document.write("<small><font color='000000' face='Arial'><b>"+dayarray[day]+", "+montharray[month]+" "+daym+", "+year+"</b></font></small>")
+</script>
+<script language="JavaScript">
+if (document.all||document.getElementById)
+document.write('<span id="worldclock" style="font:bold 16px Arial;"></span><br />')
+
+zone=0;
+isitlocal=true;
+ampm='';
+
+function updateclock(z){
+zone=z.options[z.selectedIndex].value;
+isitlocal=(z.options[0].selected)?true:false;
+}
+
+</script>
+</div>
+</marquee>
+
+	</div>
+<aside>
+	<div class="rotatinglogo">
+		<div class="single">			
+			<div class="backside"><img src="logo.png" width="100" height="100"></div>		
+		</div>
+	</div>
+	
+	<nav>
+		<ul>
+			<li><a href="#1"><span class="a"> Crazy Hour</span></a></li>
+			<li><a href="#2"><span class="b">A La Carte & Value Meals</span></a></li>
+			<li><a href="#3"><span class="c">Side Dishes</span></a></li>
+			<li><a href="#4"><span class="d">Dessert</span></a></li>
+			<li><a href="#5"><span class="e">Beverages</span></a></li>
+			<li><a href="#6"><span class="f">Happy Meals</span></a></li>
+		</ul>
+	</nav>
+</aside>
+
+<br><hr><br>
+<div>
+<h1 id="1">Crazy Hour</h1>
+<table width="100%">
+		<tr>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/8636.png?">
+			</td>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/8637.png?" align="middle">
+			</td>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/8638.png?">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h3>2x McChicken Crazy Hour Meal (M)</h3><h2>Valid from 3pm to 6pm</h2><h2>RM15.00</h2>
+			</td>
+			<td>
+				<h3>2x Spicy Chicken McDeluxe Crazy Hour Meal (M)</h3><h2>Valid from 3pm to 6pm</h2><h2>RmM20.00</h2>
+			</td>
+			<td>
+				<h3>2x 6pcs Chicken McNuggets Crazy Hour Meal(M)</h3><h2>Valid from 3pm to 6pm</h2><h2>MR15.00</h2>
+			</td>
+		</tr>
+		
+	</table>
+</div>
+
+<div>
+
+<table width="100%">
+		<tr>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/8639.png?">
+			</td>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/8643.png?">
+			</td>
+			
+		</tr>
+		<tr>
+			<td>
+				<h3>2x Ayam Goreng Spicy Crazy Hour Meal(M)</h3><h2>Valid from 3pm to 6pm</h2><h2>RM20.00</h2>
+			</td>
+			<td>
+				<h3>2x Filet-O-Fish Crazy Hour Meal</h3><h2>Valid from 3pm to 6pm</h2><h2>RM15.00</h2>
+			</td>	
+
+		</tr>
+	</table>
+</div>
+
+<h3><a href="#top">Back to top</a></h3>
+
+<hr>
+
+<div>
+<h1 id="2">A La Carte & Value Meals</h1>
+<table width="100%">
+		<tr>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/1028.png?">
+			</td>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/7967.png?">
+			</td>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/1078.png?">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h3>McChicken</h3><h2>Hot Sell</h2><h2>RM5.90</h2>
+			</td>
+			<td>
+				<h3>Double McChicken</h3><h2>RM8.90</h2>
+			</td>
+			<td>
+				<h3>Spicy Chicken Deluxe</h3><h2>RM12.55</h2>
+			</td>
+		</tr>
+		
+	</table>
+</div>
+
+<div>
+
+<table width="100%">
+		<tr>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/1079.png?">
+			</td>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/1003.png?">
+			</td>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/1027.png?">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h3>Double Spicy Chicken Deluxe</h3><h2>Hot Sell</h2><h2>RM16.55</h2>
+			</td>
+			<td>
+				<h3>Double Cheese Burger</h3><h2>Hot Sell</h2><h2>Rm12.65</h2>
+			</td>
+			<td>
+				<h3>Triple Cheese Burger</h3><h2>RM15.65</h2>
+			</td>
+		</tr>
+		
+	</table>
+</div>
+
+<div>
+<table width="100%">
+		<tr>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/1002.png?">
+			</td>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/7601.png?">
+			</td>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/1206.png?">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h3>Filet-O-Fish</h3><h2>Hot Sell</h2><h2>RM6.90</h2>
+			</td>
+			<td>
+				<h3>Double Fish-O-Fish</h3><h2>RM10.90</h2>
+			</td>
+			<td>
+				<h3>Fried Chicken McD Regular 2pcs</h3><h3>RM6.35</h3>
+			</td>
+		</tr>
+		
+	</table>
+</div>
+
+<div>
+<table width="100%">
+		<tr>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/1208.png?">
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/7977.png?">
+			</td>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/7979.png?">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h3>Fried Chicken McD (Spicy) 2pcs</h3><h2>RM6.95</h2>
+			</td>
+			<td>
+				<h3>Fried Chicken McD (Spicy) 5pcs</h3><h2>RM8.95</h2>
+			</td>
+			<td>
+				<h3>Fried Chicken McD (Spicy) 9pcs</h3><h2>RM12.95</h2>
+			</td>
+		</tr>
+		
+	</table>
+</div>
+
+<h3><a href="#top">Back to top</a></h3>
+
+<hr>
+
+<div>
+<h1 id="3">Side Dishes</h1>	
+<table width="100%">
+		<tr>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/1101.png?">
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/4158.png?">
+			</td>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/4162.png?">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h3>French Fries</h3><h2>Hot Sell</h2><h2>RM4.95</h2>
+			</td>
+			<td>
+				<h3>Coleslaw</h3><h2>RM3.65</h2>
+			</td>
+			<td>				
+				<h3>M Corn</h3><h2>RM3.65</h2>
+			</td>
+		</tr>
+		
+	</table>
+</div>
+
+<div>
+<table width="100%">
+		<tr>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/4163.png?">
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/4200.png?">
+			</td>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/1006.png?">
+			</td>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/1010.png?">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h3>L Corn</h3><h2>RM5.50</h2>
+			</td>
+			<td>
+				<h3>Chicken Porridge</h3><h2>RM7.15</h2>
+			</td>
+			<td>				
+				<h3>Chicken McNuggets 6pcs</h3><h2>RM8.95</h2>
+			</td>
+			<td>
+				
+				<h3>Chicken McNuggets 9pcs</h3><h2>RM11.95</h2>
+			</td>
+		</tr>
+		
+	</table>
+</div>
+
+<h3><a href="#top">Back to top</a></h3>
+
+<hr>
+
+<div>
+<h1 id="4">Dessert</h1>
+<table width="100%">
+		<tr>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/8114.png?">
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/4000.png?">
+			</td>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/4001.png?">
+			</td>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/4100.png?">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h3>Oreo McFlurry</h3><h2>Hot Sell</h2><h2>RM4.95</h2>
+			</td>
+			<td>
+				<h3>Chocolate Sundae</h3><h2>RM3.20</h2>
+
+			</td>
+			<td>				
+				<h3>Strawberry Sundae</h3><h2>RM3.20</h2>
+			</td>
+			<td>				
+				<h3>Apple Pie</h3><h2>Hot Sell</h2><h2>RM5.00</h2>
+			</td>
+		</tr>
+		
+	</table>
+</div>
+
+<h3><a href="#top">Back to top</a></h3>
+<hr>
+
+<div>
+<h1 id="5">Beverages</h1>	
+<table width="100%">
+		<tr>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/2509.png?">
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/2100.png?">
+			</td>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/2102.png?">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h3>100 Plus (M)</h3><h2>RM3.00</h2>
+			</td>
+			<td>
+				<h3>Coca-Cola</h3><h2>RM3.00</h2>
+			</td>
+			<td>				
+				<h3>Sprite</h3><h2>RM3.00</h2>
+			</td>
+		</tr>
+		
+	</table>
+</div>
+
+<div>
+<table width="100%">
+		<tr>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/2110.png?">
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/2112.png?">
+			</td>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/2170.png?">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h3>Ice Lemon Tea</h3><h2>RM3.00</h2>
+			</td>
+			<td>
+				<h3>Milo (Cold)</h3><h2>RM3.90</h2>
+			</td>
+			<td>				
+				<h3>Milo (Hot)</h3><h2>RM3.90</h2>
+			</td>
+		</tr>
+		
+	</table>
+</div>
+
+<div>
+<table width="100%">
+		<tr>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/2005.png?">
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/804.png?">
+			</td>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/807.png?">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h3>Premium Roast Coffee</h3><h2>Hot Sell</h2><h2>RM12.75</h2>
+			</td>
+			<td>
+				<h3>Latte</h3><h2>RM9.75</h2>
+			</td>
+			<td>				
+				<h3>Cappucino (Hot)</h3><h2>RM10.95</h2>
+			</td>
+		</tr>
+		
+	</table>
+</div>
+
+<div>
+<table width="100%">
+		<tr>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/810.png?">
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/850.png?">
+			</td>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/852.png?">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h3>Americano (Hot)</h3><h2>RM10.95</h2>
+			</td>
+			<td>
+				<h3>Iced Cappucino</h3><h2>RM10.95</h2>
+			</td>
+			<td>				
+				<h3>Iced Americano</h3><h2>RM10.95</h2>
+			</td>
+		</tr>
+		
+	</table>
+</div>
+
+<h3><a href="#top">Back to top</a></h3>
+
+<hr>
+
+<div>
+<h1 id="6">Happy Meals</h1>
+<table width="100%">
+		<tr>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/3310.png?">
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/3301.png?">
+			</td>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/3302.png?">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<h3>Chicken Porridge McD</h3><h2>RM10.95</h2>
+			</td>
+			<td>
+				<h3>CheeseBurger</h3><h2>Hot Sell</h2><h2>RM12.15</h2>
+			</td>
+			<td>				
+				<h3>4pcs Chicken McNuggets</h3><h2>RM9.85</h2>
+			</td>
+		</tr>
+		
+	</table>
+</div>
+
+<table width="100%">
+		<tr>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/3303.png?">
+			</td>
+			<td>
+				<img src="https://www.mcdelivery.com.my/my/static/1550737772766/assets/60/products/3319.png?">
+			</td>
+			
+		</tr>
+		<tr>
+			<td>
+				<h3>Fried Chicken McD</h3><h2>RM11.95</h2>
+			</td>
+			<td>
+				<h3>Chicken Burger</h3><h2>Hot Sell</h2><h2>RM10.95</h2>
+			</td>
+			
+		</tr>
+		
+	</table>
+</div>
+<h3><a href="#top">Back to top</a></h3>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Advertisement</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+	<style>
+		body{
+			background-color: rgb(255, 245, 204);
+			color:#000000;
+			font-family: 'Bree Serif', serif;
+		}
+		.a{
+			font-size: 200%
+		}
+
+		.a1{
+			display: inline-block;
+			width: 40%;
+			font-size: 120%;
+			padding-left: 10%;
+		}
+		.a2{
+			
+			display: inline-block;
+			width: 40%;
+			font-size: 120%;
+			padding-right: 10%;
+		}
+
+		/* Styles for TOPNAV*/
+.topnav
+{
+	background-color: rgb(255, 204, 0) ;
+	overflow: hidden;
+}
+
+.topnav a
+{
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	font-family: "Comic Sans MS", cursive, sans-serif
+}
+
+
+.topnav a:hover
+{
+	background-color: rgb(230, 46, 0);
+	color: rgb(255, 204, 0);
+}
+
+.topnav a.active
+{
+	background-color: rgb(230, 46, 0);
+	color: rgb(255, 204, 0);
+}
+.topnav a.active:hover
+{
+	color: white
+}
+
+header img.center
+{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+ }
+
+ @media only screen and (max-width: 1024px)
+		{	
+			header img { width: auto; height: auto;}
+			div.topnav a { padding: 12px 7px }
+			div nav img{display: none;}
+		}
+
+		@media only screen and (max-width: 768px)
+		{	
+			div.topnav a {padding: 5px 7px}
+			div.topnav { display: block; }
+		}
+
+	</style>
+
+</head>
+<body>
+
+<header>
+	<img src="logo2.png" width="1000" height="140" class="center" alt="McDonald's">
+</header><br>
+
+<div class="topnav">
+	<a href="../Home/home.html" class="active">Home</a>
+	<a href="../Page2/Page2.html">About Us</a>
+	<a href="../Page3/Page3.html">Menu</a>
+	<a href="../Page4/page4.html">Advertisement</a>
+	<a href="../Page5/Page5.html">Video</a>
+	<a href="../Page6/page6.html">Order Here</a>
+	<a href="../Page7/Page7.html">Link</a>
+	<a href="../Page8/Page8.html">Author</a>
+	<a href="../Page9/Page9.html">Documentation</a>
+</div>
+
+<fieldset>
+
+<div>
+	<table width="100%">
+	<caption class="a">Video</caption>
+	<tr>
+		<td>
+			<video src="halal.mp4" controls="true" width="500" height="50%"></video>
+		</td>
+		
+		<td align="right">
+			<p class="a2">From page 2 - About Us you can understand the whole history and management of our McDonald Company. This video is going to prove that the foods are acknowledged by government as halal foods. Besides, this video will explained the processing on food from the factory before it was sent to every branches.
+			</p>
+		</td>
+
+	</tr>
+</table>
+
+</div>
+
+<br><hr>
+
+<div>
+<table width="100%">
+	
+	<tr>
+		<td>
+			<p class="a1">From page 2 - About Us you can understand the whole history and management of our McDonald Company. Yet every statement need evidences to support with. This page will literally show you how we prepare our ingredients and food everyday.</p>
+		</td>
+		<td>
+			<div style="text-align:center"> 
+  			<button onclick="playPause()">Play/Pause</button> 
+ 			<button onclick="makeBig()">Big</button>
+ 			<button onclick="makeSmall()">Small</button>
+  			<button onclick="makeNormal()">Normal</button>
+  			<br><br>
+  			<video id="video1" width="500" controls="true">
+    		<source src="food.mp4" type="video/mp4">
+    		<source src="food.ogg" type="video/ogg">
+    		Your browser does not support HTML5 video.
+  			</video>
+			</div> 
+
+			<script> 
+			var myVideo = document.getElementById("video1"); 
+
+			function playPause() { 
+  			if (myVideo.paused) 
+    		myVideo.play(); 
+  			else 
+    		myVideo.pause(); 
+			} 
+
+			function makeBig() { 
+    		myVideo.width = 760; 
+			} 
+
+			function makeSmall() { 
+    		myVideo.width = 320; 
+			} 
+
+			function makeNormal() { 
+    		myVideo.width = 500; 
+			} 
+			</script> 
+		</td>
+	</tr>
+</table>
+</div>
+
+</fieldset>
+</body>
+</html>

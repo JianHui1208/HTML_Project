@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Order Here</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<style>
+   body
+   {
+      background-color: rgb(255, 245, 204);
+   }
+
+   form{
+   /*Just to center the form*/
+   margin: 0 auto;
+   width: 50em;
+   /*To see the outline of the form*/
+   padding: 1em;
+   border: 2px solid #ccc;
+   border-radius: 1em;
+   background-color: white
+}
+
+form div + div{
+  margin-top: 1em;
+}
+
+/*label{
+   display: inline-block;
+   width: 90px;   
+}*/
+textarea{
+   height: 5em;
+   vertical-align: top;
+}
+input[type="submit"] {
+   margin:20px auto 0% 5%;
+   width: 15%;
+
+}
+
+input[type="reset"]{
+   width: 15%;
+   margin: 20px auto 0% 5px;
+}
+
+/* Styles for TOPNAV*/
+.topnav{
+   background-color: rgb(255, 204, 0) ;
+   overflow: hidden;
+}
+
+.topnav a{
+   float: left;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+   font-family: "Comic Sans MS", cursive, sans-serif
+}
+
+
+.topnav a:hover{
+   background-color: rgb(230, 46, 0);
+   color: rgb(255, 204, 0);
+}
+
+.topnav a.active{
+   background-color: rgb(230, 46, 0);
+   color: rgb(255, 204, 0);
+}
+.topnav a.active:hover{
+   color: white
+}
+
+header img.center{
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+ }
+
+ @media only screen and (max-width: 1024px){  
+         header img { width: auto; height: auto;}
+         div.topnav a { padding: 12px 7px }
+      
+      }
+
+@media only screen and (max-width: 768px){  
+         div.topnav a {padding: 5px 7px}
+         div.topnav { display: block; }
+      }
+
+</style>
+</head>
+<body>
+<header>
+   <img src="logo2.png" width="1000" height="140" class="center" alt="McDonald's">
+</header><br>
+
+<div class="topnav">
+   <a href="../Home/home.html" class="active">Home</a>
+   <a href="../Page2/Page2.html">About Us</a>
+   <a href="../Page3/Page3.html">Menu</a>
+   <a href="../Page4/page4.html">Advertisement</a>
+   <a href="../Page5/Page5.html">Video</a>
+   <a href="../Page6/page6.html">Order Here</a>
+   <a href="../Page7/Page7.html">Link</a>
+   <a href="../Page8/Page8.html">Author</a>
+   <a href="../Page9/Page9.html">Documentation</a>
+</div><br>
+
+<form method="post" action="page6.html">
+<fieldset>
+<legend><h1 style="color: red">McDonald</h1></legend>
+
+<div>
+   <table><tr><img src="mcdlogo.jpg" width="300px" height="150px" align="right">
+   <label for="Name">Name: </label>
+   <input type="text" id="name" name="user_name" placeholder="Your Name" required="required">
+</tr>
+</div>
+<br><br>
+<div>
+   <tr>
+   <label for="Email">Email:</label>
+   <input type="email" id="email" name="user_email" placeholder="xxx@gmail.com" style="width: 200px" required="required">
+   </tr>
+</table>
+</div>
+
+<div>
+   <label for="Phone Number">Phone Number:</label>
+   <input type="number" id="phone number" name="user_number" placeholder="01X-XXXXXXXX" required="required">
+</div>
+<div>
+<table>
+<tr>
+   <td><label for="Address">Address:</label></td>
+   <td><label for="City">City:</label></td>
+</tr>
+<tr>
+   <td><input type="text" id="address" name="user_address" placeholder="Enter an address" style="width: 500px" required="requireds"></td>
+   <td><input type="text" id="City" name="user_city" placeholder="City" style="width: 215px" required="required"></td>
+</tr>
+</table>
+</div>
+<div>
+<table>
+   <tr>
+      <td><label for="Crazy Hour">Crazy Hour(valid from 3pm to 6pm):</label></td>
+      <td style="padding-right: 10px;"><label for="A La Carte & Value Meals" >A La Carte & Value Meals:</label></td>
+         </tr>
+   <tr>
+      <td>
+         <select style="width: 310px">
+            <option value="None">None</option>
+            <option value="2x McChicken Crazy Hour Meal (M)">2x McChicken Crazy Hour Meal (M)</option>
+            <option value="2x Spicy Chicken McDeluxe Crazy Hour Meal (M)">2x Spicy Chicken McDeluxe Crazy Hour Meal (M)</option>
+            <option value="2x 6pcs Chicken McNuggets Crazy Hour Meal (M)">2x 6pcs Chicken McNuggets Crazy Hour Meal (M)</option>
+            <option value="2x Ayam Goreng Spicy Crazy Hour Meal (M)">2x Ayam Goreng Spicy Crazy Hour Meal (M)</option>
+            <option value="2x Filet-O-Fish Crazy Hour Meal">2x Filet-O-Fish Crazy Hour Meal</option>
+         </select>
+      </td>
+      <td>
+         <select style="width: 300px">
+            <option value="None">None</option>
+            <option value="McChicken">McChicken</option>
+            <option value="Double McChicken">Double McChicken</option>
+            <option value="Spicy Chicken Deluxe">Spicy Chicken Deluxe</option>
+            <option value="Double Spicy Chicken Deluxe">Double Spicy Chicken Deluxe</option>
+            <option value="Double Cheese Burger">Double Cheese Burger</option>
+            <option value="Triple Cheese Burger">Triple Cheese Burger</option>
+            <option value="Filet-O-Fish">Filet-O-Fish</option>
+            <option value="Double Fish-O-Fish">Double Fish-O-Fish</option>
+            <option value="Fried Chicken McD Regular 2pcs">Fried Chicken McD Regular 2pcs</option>
+            <option value="Fried Chicken McD(Spicy)2pcs">Fried Chicken McD(Spicy)2pcs</option>
+            <option value="Fried Chicken McD(Spicy)5pcs">Fried Chicken McD(Spicy)5pcs</option>
+            <option value="Fried Chicken McD(Spicy)9pcs">Fried Chicken McD(Spicy)9pcs</option>
+         </select>
+      </td>
+   </tr>
+</table>
+</div>
+<div>
+<table>
+   <tr>
+      <td><label for="Side Dishes">Side Dishes:</label></td>
+      <td><label for="Dessert">Dessert:</label></td>
+      <td><label for="Beverages">Beverages:</label></td>
+   </tr>
+   <tr>
+      <td>
+         <select style="width: 200px">
+            <option value="None">None</option>
+            <option value="French Fries">French Fries</option>
+            <option value="Coleslaw">Coleslaw</option>
+            <option value="M Corn">M Corn</option>
+            <option value="L Corn">L Corn</option>
+            <option value="Chicken Porridge">Chicken Porridge</option>
+            <option value="Chicken McNuggets 6pcs">Chicken McNuggets 6pcs</option>
+            <option value="Chicken McNuggets 9pcs">Chicken McNuggets 9pcs</option>       
+         </select>
+      </td>
+      <td>
+         <select style="width: 200px">
+            <option value="None">None</option>
+            <option value="Oreo McFlurry">Oreo McFlurry</option>
+            <option value="Chocolate Sundae">Chocolate Sundae</option>
+            <option value="Strawberry Sundae">Strawberry Sundae</option>
+            <option value="Apple Pie">Apple Pie</option>
+         </select>
+      </td>
+      <td>
+         <select style="width: 200px">
+            <option value="None">None</option>
+            <option value="100 plus(M)">100 plus(M)</option>
+            <option value="Coca-Cola">Coca-Cola</option>
+            <option value="Sprite">Sprite</option>
+            <option value="Ice Lemon Tea">Ice Lemon Tea</option>
+            <option value="Milo(Cold)">Milo(Cold)</option>
+            <option value="Milo(Hot)">Milo(Hot)</option>
+            <option value="Premium Roast Coffee">Premium Roast Coffee</option>
+            <option value="Latte">Latte</option>
+            <option value="Cappucino(Hot)">Cappucino(Hot)</option>
+            <option value="Americano(Hot)">Americano(Hot)</option>
+            <option value="Iced Cappucino">Iced Cappucino</option>
+            <option value="Iced Americano">Iced Americano</option>
+         </select>
+      </td>
+   </tr>
+</table>
+</div>
+<div>
+   <label for="Happy Meals">Happy Meals:</label>
+   <select style="width: 500px">
+      <option value="None">None</option>
+      <option value="Chicken Porridge McD">Chicken Porridge McD</option>
+      <option value="Cheese Burger">Cheese Burger</option>
+      <option value="4pcs Chicken McNuggets">4pcs Chicken McNuggets</option>
+      <option value="Fried Chicken McD">Fried Chicken McD</option>
+      <option value="Chicken Burger">Chicken Burger</option>
+   </select>
+</div>
+<div>
+<table>
+<tr>
+   <td><label for="payment method">payment method:</label></td>
+   <td><input type="radio" name="gender" value="Cash" required="required">Cash</td>
+</tr>
+<tr>
+    <td></td>
+   <td><input type="radio" name="gender" value="Debit/Credit Card" required="required">Debit/Credit Card</td>
+</tr>
+<table>
+</div>
+<table>
+   <div>
+   <tr>
+      <td><label for="Credit Card">Credit Card:</label></td>
+      <td><label for="Number">Number:</label></td>
+      <td><label for="Expiration Date">Expiration Date:</label></td>
+   </tr>
+   <tr>
+   <td>
+      <select style="width: 200px">
+         <option value="Visa">Visa</option>
+         <option value="Mastercard">Mastercard</option>
+      </select>
+   </td>
+   <td><input type="text" id="number" name="number"></td>
+   <td>
+      <select style="width: 200px">
+         <option value="January">January</option>
+         <option value="February">February</option>
+         <option value="March">March</option>
+         <option value="April">April</option>
+         <option value="May">May</option>
+         <option value="June">June</option>
+         <option value="July">July</option>
+         <option value="August">August</option>
+         <option value="September">September</option>
+         <option value="October">October</option>
+         <option value="November">November</option>
+         <option value="December">December</option>
+      </select>
+   </td>
+   <td>
+      <select style="width: 200px">
+         <option value="2019">2019</option>
+         <option value="2020">2020</option>
+         <option value="2021">2021</option>
+         <option value="2022">2022</option>
+         <option value="2023">2023</option>
+         <option value="2024">2024</option>
+      </select>
+   </td>
+   </tr>
+   </div>
+</table>
+<table>
+   <div>
+      <tr>
+         <td><label for="First Name">First Name:</label></td>
+         <td><label for="Last Name">Last Name:</label></td>
+      </tr>
+      <tr>
+         <td><input type="text" id="First Name" name="user_name" style="width: 300px"></td>
+         <td><input type="text" id="Last Name" name="user_lastname" style="width: 300px"></td>
+      </tr>
+   </div>
+</table>
+<div>
+   <input type="submit" name="submit" value="Order Now!" style="color: yellow;background-color: red;width: 600px;height: 40px">
+</div>
+</fieldset>
+</form>
+</body>
+</html>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Link</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+</head>
+<style>
+main img {
+  border: 1px solid yellow;
+  border-radius: 4px;
+  padding: 5px;
+  width: 160px;
+}
+
+main img:hover {
+  box-shadow: 0 0 2px 1px yellow;
+}
+dt
+{
+	font-family: Georgia, serif;
+	font-size: 15px;
+}
+dd
+{
+	font-family: serif;
+	font-size: 15px;
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+a
+{
+	color: red;
+}
+body
+{
+	background-color: rgb(255, 245, 204)
+}
+
+/* Styles for PAGE LAYOUT*/
+header, nav, main, footer, aside
+
+{
+	display: block;
+}
+
+
+nav
+{
+	float: left;
+	width: 250px;
+	background-color:rgb(255, 245, 204) ;
+}
+
+aside
+{
+	float: right;
+	line-height: 120%;
+	width: 250px;
+	background-color:rgb(255, 235, 153) ;
+	
+}
+
+main
+{
+	background-color: rgb(255, 245, 204);
+	text-align: center;
+	font-size: 150%
+}
+
+footer
+{
+	clear: both;
+	background-color: rgb(255, 204, 0);
+	color: white;
+	line-height: 4em;
+	text-align: center;
+	font:normal small-caps 0.8em/4em;
+}
+
+
+/* Styles for TOPNAV*/
+.topnav
+{
+	background-color: rgb(255, 204, 0) ;
+	overflow: hidden;
+}
+
+.topnav a
+{
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	font-family: "Comic Sans MS", cursive, sans-serif
+}
+
+
+.topnav a:hover
+{
+	background-color: rgb(230, 46, 0);
+	color: rgb(255, 204, 0);
+}
+
+.topnav a.active
+{
+	background-color: rgb(230, 46, 0);
+	color: rgb(255, 204, 0);
+}
+.topnav a.active:hover
+{
+	color: white
+}
+
+aside p 
+{	text-align: center;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 0.8em
+}
+
+/* Styles for NAV LIST*/
+
+nav img
+{
+	margin: 2em
+}
+
+nav ul li
+{
+	list-style-type: none;
+	background-color:rgb(255, 245, 204) ;
+	width: 100%;
+	border-bottom:1px solid rgb(182,182,92);
+	display: block;
+	line-height: 250%;
+}
+
+nav  a 
+{
+	text-decoration: none;
+	color: black;
+	font-size: 120%;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+nav a:hover
+{
+	color: rgb(230, 184, 0);
+}
+
+/* Styles for IMAGE */
+header img.center
+{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+ }
+
+div img
+{
+	margin: 20px
+}
+
+aside img
+{
+	margin: 7px
+}
+
+aside p 
+{	text-align: center;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 0.8em
+}
+
+h3
+{
+	text-align: center;
+}
+
+h4
+{
+	text-align: center;
+	font-size: 110%
+}
+
+div nav p
+{
+	text-align:center;
+	font-weight: bold;
+	border-bottom: outset;
+}
+
+@media only screen and (max-width: 1024px)
+		{	
+			header img { width: auto; height: auto;}
+			div.topnav a { padding: 12px 7px }
+			div nav img{display: none;}
+			nav {display: none;}
+			main img { display: none; }
+			main h1 { font-size: 170%;margin: 0;text-align: left;}
+			aside { width: 40% }
+			aside img { padding-left: 3em; }
+			table { padding: 2em }
+			main div p { display: none; }
+		}
+
+		@media only screen and (max-width: 768px)
+		{	
+			div.topnav a {padding: 5px 7px}
+			div.topnav { display: block; }
+			nav{ display:none; }
+			main h1 { font-size: 110% }
+			main p { font-size: 90% }
+			aside { width: 35% }
+			aside img { margin: 2px }
+			table { display: none; }
+			main div p {display: inherit;}
+		}
+
+</style>
+<body>
+	<header>
+	<img src="logo2.png" width="1000" height="140" class="center" alt="McDonald's">
+</header>
+
+<br>
+
+<div class="topnav">
+	<a href="../Home/home.html" class="active">Home</a>
+	<a href="../Page2/Page2.html">About Us</a>
+	<a href="../Page3/Page3.html">Menu</a>
+	<a href="../Page4/page4.html">Advertisement</a>
+	<a href="../Page5/Page5.html">Video</a>
+	<a href="../Page6/page6.html">Order Here</a>
+	<a href="../Page7/Page7.html">Link</a>
+	<a href="../Page8/Page8.html">Author</a>
+	<a href="../Page9/Page9.html">Documentation</a>
+</div>
+
+<div>
+	<nav>
+		<p>Today Date is :</p>
+	   <marquee  onMouseout="this.scrollAmount=10" scrolldelay="10" scrollamount="2" direction="left" width="90%" height="20%">
+	<div>
+	   <script>
+var mydate=new Date()
+var year=mydate.getYear()
+if (year < 1000)
+year+=1900
+var day=mydate.getDay()
+var month=mydate.getMonth()
+var daym=mydate.getDate()
+if (daym<10)
+daym="0"+daym
+var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+document.write("<small><font color='000000' face='Arial'><b>"+dayarray[day]+", "+montharray[month]+" "+daym+", "+year+"</b></font></small>")
+</script>
+<script language="JavaScript">
+if (document.all||document.getElementById)
+document.write('<span id="worldclock" style="font:bold 16px Arial;"></span><br />')
+
+zone=0;
+isitlocal=true;
+ampm='';
+
+function updateclock(z){
+zone=z.options[z.selectedIndex].value;
+isitlocal=(z.options[0].selected)?true:false;
+}
+
+</script>
+</div>
+</marquee>
+
+
+		<img src="logo1.png" width="160" height="145" alt="Logo">
+		<ul>
+			<li><a href="../Home/home.html" class="active">Home</a></li>
+			<li><a href="../Page2/Page2.html">About Us</a></li>
+			<li><a href="../Page3/Page3.html">Menu</a></li>
+			<li><a href="../Page4/page4.html">Advertisement</a></li>
+			<li><a href="../Page5/Page5.html">Video</a></li>
+			<li><a href="../Page6/page6.html">Order Here</a></li>
+			<li><a href="../Page7/Page7.html">Link</a></li>
+			<li><a href="../Page8/Page8.html">Author</a></li>
+			<li><a href="../Page9/Page9.html">Documentation</a></li>
+		</ul>
+	</nav>
+</div>
+
+	<aside>
+		<h3>Contact Us</h3>
+		<hr width="90%" align="center" noshade>
+
+		<a href="https://www.facebook.com/My.McDonalds/?ref=br_rs" target="_new"><img src="fb.png" width="45" height="45" ></a>
+
+		<a href="https://www.instagram.com/mcdonaldsmalaysia/" target="_new"><img src="insta.png" width="45" height="45"></a>
+
+		<a href="https://www.youtube.com/user/McDonaldsMalaysia" target="_new"><img src="youtube.png" width="45" height="45"></a>
+
+		<a href="https://twitter.com/mcdonalds" target="_new"><img src="twitter.png" width="45" height="45"></a>
+
+		<h4>Kuala Lumpur</h4>
+		<hr width="90%" align="center" noshade>
+
+		<p><strong>Address:</strong><br>
+			McDonald's Bangsar 48 Jalan Telawi Lima, 59100, Bangsar Baru, Kuala Lumpur, Malaysia.
+		</p><br>
+
+
+		<p>Tel: 03-22843790.<br>
+		   Fax: 03-22843790.
+		</p>
+
+		<h4>Johor</h4>
+		<hr width="90%" align="center" noshade>
+
+		<p><strong>Address:</strong><br>
+			McDonald's Holiday Plaza Lg 8 Holiday Plaza, Jalan Dato’ Sulaiman, 80245, Johor Bahru, Johor, Malaysia.
+		</p><br>
+
+		<p>Tel: 07-3322100.<br>
+		   Fax: 07-3310926.
+		</p>
+
+		<h4>Selangor</h4>
+		<hr width="90%" align="center" noshade>
+
+		<p><strong>Address:</strong><br>
+			McDonald's Kepong No.1&2 Jalan 54, Desa Jaya 52100, Kepong Selangor, Malaysia.		
+		</p><br>
+
+		<p>Tel: 03-62767457.<br>
+		   Fax: 03-62767457.
+		</p>
+	</aside>
+
+
+
+<main>
+
+<h4>Links To Other Websites:</h4>
+<dl>
+	<dt><a href="https://www.mcdonalds.com.my/">McDonald's Official Website Malaysia</a></dt>
+	<dd>The McDonald's Official Website Malaysia</dd>
+    <dt><a href="https://en.wikipedia.org/wiki/McDonald%27s">Wikepedia-McDonald's</a></dt>
+	<dd>If you want to know more about McDonald's you can click this.</dd>
+	<dt><a href="https://www.facebook.com/My.McDonalds/">Facebook-McDonald's</a></dt>
+	<dd>Official McDonald's Malaysia</dd>
+	<dt><a href="https://twitter.com/McDonalds?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter-McDonald's</a></dt>
+	<dd>Official Twitter-McDonald's</dd>
+	<dt><a href="https://www.mcdonalds.com.my/menu">McDonald's Menu</a></dt>
+	<dd>If you want to know McDonald's menu you can click this.</dd>
+
+</dl>
+<h2>McDonald's Image</h2>
+<p>Click on the image to enlarge it.</p>
+
+<a target="_blank" href="https://d3i6fh83elv35t.cloudfront.net/static/2018/02/RTX4WSI9-1024x672.jpg">
+<img src="https://d3i6fh83elv35t.cloudfront.net/static/2018/02/RTX4WSI9-1024x672.jpg" alt="McDonalds" style="width: 160px;"></a>
+
+	<footer>
+		<p>Copyright &copy; 2019 IT 19-A Team. All Rights Reserved. </p>
+	</footer>
+
+</main>
+</body>
+</html>

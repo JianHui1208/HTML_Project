@@ -1,0 +1,55 @@
+.a
+{
+	color: #e6e600;
+}
+
+.b{
+	color: #06f9f9;
+}
+.c{
+	color: #000000;
+	text-decoration-line: none;
+}
+
+/* Styles for TOPNAV*/
+.topnav
+{
+	background-color: rgb(255, 204, 0) ;
+	overflow: hidden;
+}
+
+.topnav a
+{ 
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	font-family: "Comic Sans MS", cursive, sans-serif
+}
+
+
+.topnav a:hover
+{
+	background-color: rgb(230, 46, 0);
+	color: rgb(255, 204, 0);
+}
+
+.topnav a.active
+{
+	background-color: rgb(230, 46, 0);
+	color: rgb(255, 204, 0);
+}
+.topnav a.active:hover
+{
+	color: white
+}
+
+header img.center
+{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+ }

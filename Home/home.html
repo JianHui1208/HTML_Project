@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+
+	<style>
+		@media only screen and (max-width: 1024px)
+		{	
+			header img { width: auto; height: auto;}
+			div.topnav a { padding: 12px 7px }
+			div nav img{display: none;}
+			nav {display: none;}
+			main img { display: none; }
+			main h1 { font-size: 170%;margin: 0;text-align: left;}
+			aside { width: 40% }
+			aside img { padding-left: 3em; }
+			table { padding: 2em }
+			main div p { display: none; }
+		}
+
+		@media only screen and (max-width: 768px)
+		{	
+			div.topnav a {padding: 5px 7px}
+			div.topnav { display: block; }
+			nav{ display:none; }
+			main h1 { font-size: 110% }
+			main p { font-size: 90% }
+			aside { width: 35% }
+			aside img { margin: 2px }
+			table { display: none; }
+			main div p {display: inherit;}
+		}
+	</style>
+</head>
+
+<body>
+
+<header>
+	<img src="logo2.png" width="1000" height="140" class="center" alt="McDonald's">
+</header>
+
+<br>
+
+<div class="topnav">
+	<a href="../Home/home.html" class="active">Home</a>
+	<a href="../Page2/Page2.html">About Us</a>
+	<a href="../Page3/Page3.html">Menu</a>
+	<a href="../Page4/page4.html">Advertisement</a>
+	<a href="../Page5/Page5.html">Video</a>
+	<a href="../Page6/page6.html">Order Here</a>
+	<a href="../Page7/Page7.html">Link</a>
+	<a href="../Page8/Page8.html">Author</a>
+	<a href="../Page9/Page9.html">Documentation</a>
+</div>
+
+<div>
+	<nav>
+		<p>Today Date is :</p>
+	   <marquee  onMouseout="this.scrollAmount=10" scrolldelay="10" scrollamount="2" direction="left" width="90%" height="20%">
+	<div>
+	   <script>
+var mydate=new Date()
+var year=mydate.getYear()
+if (year < 1000)
+year+=1900
+var day=mydate.getDay()
+var month=mydate.getMonth()
+var daym=mydate.getDate()
+if (daym<10)
+daym="0"+daym
+var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+document.write("<small><font color='000000' face='Arial'><b>"+dayarray[day]+", "+montharray[month]+" "+daym+", "+year+"</b></font></small>")
+</script>
+<script language="JavaScript">
+if (document.all||document.getElementById)
+document.write('<span id="worldclock" style="font:bold 16px Arial;"></span><br />')
+
+zone=0;
+isitlocal=true;
+ampm='';
+
+function updateclock(z){
+zone=z.options[z.selectedIndex].value;
+isitlocal=(z.options[0].selected)?true:false;
+}
+
+</script>
+</div>
+</marquee>
+
+
+		<img src="logo1.png" width="160" height="145" alt="Logo">
+		<ul>
+			<li><a href="../Home/home.html" class="active">Home</a></li>
+			<li><a href="../Page2/Page2.html">About Us</a></li>
+			<li><a href="../Page3/Page3.html">Menu</a></li>
+			<li><a href="../Page4/page4.html">Advertisement</a></li>
+			<li><a href="../Page5/Page5.html">Video</a></li>
+			<li><a href="../Page6/page6.html">Order Here</a></li>
+			<li><a href="../Page7/Page7.html">Link</a></li>
+			<li><a href="../Page8/Page8.html">Author</a></li>
+			<li><a href="../Page9/Page9.html">Documentation</a></li>
+		</ul>
+	</nav>
+
+	<aside>
+		<h3>Contact Us</h3>
+		<hr width="90%" align="center" noshade>
+
+		<a href="https://www.facebook.com/My.McDonalds/?ref=br_rs" target="_new"><img src="fb.png" width="45" height="45" ></a>
+
+		<a href="https://www.instagram.com/mcdonaldsmalaysia/" target="_new"><img src="insta.png" width="45" height="45"></a>
+
+		<a href="https://www.youtube.com/user/McDonaldsMalaysia" target="_new"><img src="youtube.png" width="45" height="45"></a>
+
+		<a href="https://twitter.com/mcdonalds" target="_new"><img src="twitter.png" width="45" height="45"></a>
+
+		<h4>Kuala Lumpur</h4>
+		<hr width="90%" align="center" noshade>
+
+		<p><strong>Address:</strong><br>
+			McDonald's Bangsar 48 Jalan Telawi Lima, 59100, Bangsar Baru, Kuala Lumpur, Malaysia.
+		</p><br>
+
+
+		<p>Tel: 03-22843790.<br>
+		   Fax: 03-22843790.
+		</p>
+
+		<h4>Johor</h4>
+		<hr width="90%" align="center" noshade>
+
+		<p><strong>Address:</strong><br>
+			McDonald's Holiday Plaza Lg 8 Holiday Plaza, Jalan Dato’ Sulaiman, 80245, Johor Bahru, Johor, Malaysia.
+		</p><br>
+
+		<p>Tel: 07-3322100.<br>
+		   Fax: 07-3310926.
+		</p>
+
+		<h4>Selangor</h4>
+		<hr width="90%" align="center" noshade>
+
+		<p><strong>Address:</strong><br>
+			McDonald's Kepong No.1&2 Jalan 54, Desa Jaya 52100, Kepong Selangor, Malaysia.		
+		</p><br>
+
+		<p>Tel: 03-62767457.<br>
+		   Fax: 03-62767457.
+		</p>
+	</aside>
+
+	<main>
+	 <center>
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="burger.jpg" width="940" height="400" border="0" alt=""/> 
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="burger2.jpg" width="940" height="400" border="0" alt=""/>
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="burger5.jpg" width="940" height="400" border="0" alt=""/>
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="burger4.jpg" width="940" height="400" border="0" alt=""/>
+  <div class="text"></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+   <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script></center>
+
+<h1>Special Acknowledgements To:</h2>
+<br>
+	<p><strong>JavaScript Kit:</strong> Providing free copyright, pictures and related information.</p>
+
+<br>
+<h1>For more information, please contact us: </h2>
+<br>
+	<table align="center">
+		<tr>
+			<td><a href="mailto:hyukchan2001@gmail.com">Aw Rui Ying</a></td>
+			<td><a href="mailto:zerofour0492@gmail.com">Ling Hui Shan</a></td>
+		</tr>
+		<tr>
+			<td>ID: D190072A</td>
+			<td>ID: D190009A</td>
+		</tr>
+		<tr>
+			<td><a href="mailto:yeowjingzhi@hotmail.com">Yeow Jing Zhi</a></td>
+			<td><a href="mailto:jianhuiwilliam80@gmail.com">William Gwee Jian Hui</a></td>
+		</tr>
+
+		<tr>
+			<td>ID: D190066A</td>
+			<td>ID: D190067A</td>
+		</tr>
+		<tr>
+			<td><a href="mailto:chenxuehao0701@gmail.com">Chen Xue Hao</a></td>
+			<td><a href="mailto:teeivy63@gmail.com">Ivy Tee Yee Wei</a></td>
+		</tr>
+		<tr>
+			<td>ID: D180478C</td>
+			<td>ID: D190040A</td>
+		</tr>
+	</table>
+<div>
+	<p>
+		<a href="mailto:hyukchan2001@gmail.com">Aw Rui Ying</a><br>
+		ID: D190072A
+	</p>
+		<p>
+		<a href="mailto:zerofour0492@gmail.com">Ling Hui Shan</a><br>
+		ID: D190009A
+	</p>
+		<p>
+		<a href="mailto:yeowjingzhi@hotmail.com">Yeow Jing Zhi</a><br>
+		ID: D190066A
+	</p>
+		<p>
+		<a href="mailto:jianhuiwilliam80@gmail.com">Willian Gwee Jian Hui</a><br>
+		ID: D190067A
+	</p>
+		<p>
+		<a href="mailto:chenxuehao0701@gmail.com">Chen Xue Hao</a><br>
+		ID: D180478C
+	</p>
+		<p>
+		<a href="mailto:teeivy63@gmail.com">Ivy Tee Yee Wei</a><br>
+		ID: D190040A
+	</p>
+</div>
+
+		<footer>
+			<p>Copyright &copy; 2019 IT 19-A Team. All Rights Reserved. </p>
+		</footer>
+	</main>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Video</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		h1,
+		p {
+
+			text-align: center;
+			font-size: 1.7em;
+			font-family: 'Shadows Into Light', cursive;
+
+		}
+
+		body {
+			background-color: rgb(255, 245, 204);
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="finalpage5.css">
+</head>
+
+<body>
+
+	<header>
+		<img src="logo2.png" width="1000" height="140" class="center" alt="McDonald's">
+	</header><br>
+
+	<div class="topnav">
+		<a href="../Home/home.html" class="active">Home</a>
+		<a href="../Page2/Page2.html">About Us</a>
+		<a href="../Page3/Page3.html">Menu</a>
+		<a href="../Page4/page4.html">Advertisement</a>
+		<a href="../Page5/Page5.html">Video</a>
+		<a href="../Page6/page6.html">Order Here</a>
+		<a href="../Page7/Page7.html">Link</a>
+		<a href="../Page8/Page8.html">Author</a>
+		<a href="../Page9/Page9.html">Documentation</a>
+	</div>
+
+	<p>Today Date is :</p>
+	<marquee onMouseout="this.scrollAmount=10" scrolldelay="10" scrollamount="2" direction="left" width="90%"
+		height="20%">
+		<div>
+			<script>
+				var mydate = new Date()
+				var year = mydate.getYear()
+				if (year < 1000)
+					year += 1900
+				var day = mydate.getDay()
+				var month = mydate.getMonth()
+				var daym = mydate.getDate()
+				if (daym < 10)
+					daym = "0" + daym
+				var dayarray = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
+				var montharray = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December")
+				document.write("<small><font color='000000' face='Arial'><b>" + dayarray[day] + ", " + montharray[month] + " " + daym + ", " + year + "</b></font></small>")
+			</script>
+			<script language="JavaScript">
+				if (document.all || document.getElementById)
+					document.write('<span id="worldclock" style="font:bold 16px Arial;"></span><br />')
+
+				zone = 0;
+				isitlocal = true;
+				ampm = '';
+
+				function updateclock(z) {
+					zone = z.options[z.selectedIndex].value;
+					isitlocal = (z.options[0].selected) ? true : false;
+				}
+
+			</script>
+		</div>
+	</marquee>
+
+	<h1 class="b">Video</h1>
+
+	<div align="middle">
+		<h2><strong>Check it out for our lastest video</strong></h2>
+	</div>
+
+	<aside><img src="https://media.giphy.com/media/rL10MUfEoXlSM/giphy.gif" align="left" width="200" height="200">
+	</aside>
+	<aside><img src="https://media.giphy.com/media/rL10MUfEoXlSM/giphy.gif" align="right" width="200" height="200">
+	</aside>
+
+	<div align="middle"><iframe width="560" height="315" src="https://www.youtube.com/embed/OK_JCtrrv-c" frameborder="0"
+			allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+
+
+	<p>Upcoming Special Menu - <span class="a">Fish Prosperity Burger</span></p>
+
+	<div align="middle"><iframe width="560" height="315" src="https://www.youtube.com/embed/UuFCLAlVJdY" frameborder="0"
+			allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+
+	<p><span class="a">McDonald</span> - The Familiar Taste</p>
+	<h2><a href="#top"><span class="c">Back to top</span></a></h2>
+
+</body>
+
+</html>
